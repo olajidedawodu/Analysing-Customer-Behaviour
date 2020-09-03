@@ -1,2 +1,0 @@
-# GLB
-test
