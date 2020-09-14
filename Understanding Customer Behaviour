@@ -1,0 +1,48 @@
+Using Big Data to analyse Customer Behaviour with Recency, Frequency and Monetary values.
+
+Big Data tools are used to identify potential customers for retail Industry.
+
+Customers are classified as High Value, Medium Value and Lower Value
+
+Dataset : The Dataset consists of 541909 data. The data consists of 8 columns.
+
+Feature Selection: All important columns in analysing customer behaviour were selected and the rest were dropped. 
+All columns in dataset were converted to requires column type for easy analysis. Relevant column needed to gain knowledge from data were transformed and a new column created.
+This includes transforming the date and time into seconds.
+
+
+
+Pre-Processing
+The dataset of retail store will need to be processed using the following methods:
+1. All columns were transformed into required Datatype.
+2. Any missing or null values were dropped in the dataset.
+3. InvoiceDate column were converted from stringtype to timestamptype
+4. UnitPrice converted from stringtype to floattype, while Quantity were converted from stringtype to Intergertype.
+5. All relevant dataframe were joined considering CustomerID as keyvalue to give a combined column with CustomerID, recency, frequency and monetary variables.
+
+
+Elbow Method. This method is to obtain optimum value of k (number of clusters) in Recency, Frequency and Monetary Values.
+Increasing the value of k decreases SSE, while the graph decreases gradually from k=2 to k=3, and then from k =3 to k =4 
+until the value k is stable. The drastic decrease results to elbow at point k = 3, which is the ideal cluster.
+
+OTHER METHODS OF GEETING K VALUE 
+-Silhouette Coefficient
+
+Method for Predicting Customer Segmentation
+1. Kmean Clustering using optimum K value
+2. Decision Tree Classifier
+3. Random Forest Classifier
+4. Logistic Regression
+
+
+VALIDATING THE BEST MODEL
+5-FOLD CROSS VALIDATION: To choose the best performing model for analysing customer Behaviour.
+
+
+Confusion Matrix: To obtain Accuracy, Precision, Recall and F1 measure
+
+
+Cluster Segmentation
+ Cluster 0 - High Value Customer
+ Cluster 1 - Mediun Value Customer
+ Cluster 2 - Low Value Customer
