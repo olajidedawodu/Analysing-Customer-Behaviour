@@ -10,3 +10,7 @@ Parquet format was load to be read.
 DataType converted to right type.
 
 SparkSQL applied to get the highest temperature, hottest Day, and hottest Region.
+
+See coding link below
+
+https://github.com/olajidedawodu/GLB/blob/master/DLG.ipynb
